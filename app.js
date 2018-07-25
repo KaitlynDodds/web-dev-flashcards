@@ -1,14 +1,19 @@
-const express = require('express');
+const express 		= require('express');
+const bodyParser 	= require('body-parser');
+const cookieParser  = require('cookie-parser');
 
-const indexRoutes = require('./routes');
-const userRoutes = require('./routes/users');
+const indexRoutes 	= require('./routes');
+const userRoutes 	= require('./routes/users');
 
-const app = express();
+const app 			= express();
 
 
 /* Setup
 ***************/
 app.set('view engine', 'pug');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 
 
 /* Routes
