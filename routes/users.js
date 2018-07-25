@@ -5,11 +5,11 @@ const router = express.Router();
 /* Routes
 ***************/
 
-router.get('/', (req, res) => {
+router.get('/login', (req, res) => {
 	res.render('user');
 });
 
-router.post('/', (req, res) => {
+router.post('/login', (req, res) => {
 	if (req.body.username.trim()) {
 		// set cookie 
 		res.cookie('username', req.body.username);
@@ -17,6 +17,13 @@ router.post('/', (req, res) => {
 		res.redirect('/');
 	}
 	throw new Error('Invalid Username');
+});
+
+router.get('/logout', (req, res) => {
+	// clear cookies
+	res.clearCookie('username');
+	// redirect back to login
+	res.redirect('/users/login');
 });
 
 module.exports = router;
