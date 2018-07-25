@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/KaitlynDodds/web-dev-flashcards/issues"
   },
-  "homepage": "https://github.com/KaitlynDodds/web-dev-flashcards#readme"
+  "homepage": "https://github.com/KaitlynDodds/web-dev-flashcards#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
 }
