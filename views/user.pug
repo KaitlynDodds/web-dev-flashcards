@@ -1,0 +1,7 @@
+extends layout.pug
+
+block main
+	//- ask the user for their name
+	form(action='/user', method='POST')
+		label(for='username') Username:
+		input(type='text',name='username') 

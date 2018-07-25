@@ -1,6 +1,7 @@
 const express = require('express');
 
 const indexRoutes = require('./routes');
+const userRoutes = require('./routes/users');
 
 const app = express();
 
@@ -9,10 +10,13 @@ const app = express();
 ***************/
 app.set('view engine', 'pug');
 
+
 /* Routes
 ***************/
 
 app.use(indexRoutes);
+app.use('/users', userRoutes);
+
 
 /* Serve
 ***************/
