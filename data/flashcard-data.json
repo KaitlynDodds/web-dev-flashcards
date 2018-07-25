@@ -1,0 +1,170 @@
+{
+	"data": {
+		"title": "Web Development Flashcards",
+		"topics": [
+			{
+				"title": "Http Status Codes",
+				"cards": [
+					{
+						"prompt": "Status Code: 100",
+						"answer": "Continue",
+						"extra": "Interim response indicates that everything is okay so far"
+					},
+					{
+						"prompt": "Status Code: 102",
+						"answer": "Processing",
+						"extra": "The server has received and is processing the request, but no response is available yet"
+					},
+					{
+						"prompt": "Status Code: 200",
+						"answer": "Okay",
+						"extra": "request has succeeded"
+					},
+					{
+						"prompt": "Status Code: 301",
+						"answer": "Moved Permanently",
+						"extra": "the URI of the requested resource has been changed"
+					},
+					{
+						"prompt": "Status Code: 302",
+						"answer": "Found",
+						"extra": "the URI of requested resource has been changed temporarily"
+					},
+					{
+						"prompt": "Status Code: 304",
+						"answer": "Not Modified",
+						"extra": "the response has not been modified, so the client can continue to use the same cached version of the response"
+					},
+					{
+						"prompt": "Status Code: 400",
+						"answer": "Bad Request",
+						"extra": "server could not understand the request due to invalid syntax"
+					},
+					{
+						"prompt": "Status Code: 401",
+						"answer": "Unauthorized",
+						"extra": "the client must authenticate itself to get the requested response"
+					},
+					{
+						"prompt": "Status Code: 403",
+						"answer": "Forbidden",
+						"extra": "client does not have access rights to the content (client's identity is known to the server)"
+					},
+					{
+						"prompt": "Status Code: 404",
+						"answer": "Not Found",
+						"extra": "server can not find requested resource"
+					},
+				]
+			},
+			{
+				"title": "Acronyms",
+				"cards": [
+					{
+						"prompt": "What does HTTP stand for?",
+						"answer": "Hypertext Transfer Protocol"
+					},
+					{
+						"prompt": "What does S at the end of HTTPS stand for?",
+						"answer": "Secure"
+					},
+					{
+						"prompt": "What does HTML stand for?",
+						"answer": "Hypertext Markup Language"
+					},
+					{
+						"prompt": "What does CSS stand for?",
+						"answer": "Cascading Style Sheets"
+					},
+					{
+						"prompt": "What does SSL stand for?",
+						"answer": "Secure Sockets Layer"
+					},
+					{
+						"prompt": "What does TLS stand for?",
+						"answer": "Transport Layer Security"
+					},
+					{
+						"prompt": "What does CMS stand for?",
+						"answer": "Content Management System"
+					},
+					{
+						"prompt": "What does SEO stand for?",
+						"answer": "Search Engine Optimization"
+					},
+					{
+						"prompt": "What does UX stand for?",
+						"answer": "User Experience"
+					},
+					{
+						"prompt": "What does PNG stand for?",
+						"answer": "Portable Network Graphics"
+					},
+					{
+						"prompt": "What does AJAX stand for?",
+						"answer": "Asynchronous JavaScript and XML"
+					},
+					{
+						"prompt": "What does ASCII stand for?",
+						"answer": "American Standard Code for Information Interchange"
+					},
+					{
+						"prompt": "What does CSV stand for?",
+						"answer": "Comma Separated Values"
+					},
+					{
+						"prompt": "What does DOM stand for?",
+						"answer": "Document Object Model"
+					},
+					{
+						"prompt": "What does DTD stand for?",
+						"answer": "Document Type Definition",
+						"extra": "a line or two of code at the top of a markup language document, like HTML or XML, which defines the language and standard that the document is adhering to"
+					},
+					{
+						"prompt": "What does FTP stand for?",
+						"answer": "File Transfer Protocol"
+					},
+					{
+						"prompt": "What does JSON stand for?",
+						"answer": "JavaScript Object Notation"
+					},
+					{
+						"prompt": "What does NaN stand for?",
+						"answer": "Not a Number"
+					},
+					{
+						"prompt": "What does OOP stand for?",
+						"answer": "Object Oriented Programming"
+					},
+					{
+						"prompt": "What does SQL stand for?",
+						"answer": "Structured Query Language"
+					},
+					{
+						"prompt": "What does SVG stand for?",
+						"answer": "Scalable Vector Graphics"
+					},
+					{
+						"prompt": "What does TLD stand for?",
+						"answer": "Top Level Domain",
+						"extra": "domain name extension such as .com, .net, or .org"
+					},
+					{
+						"prompt": "What does UI stand for?",
+						"answer": "User Interface"
+					},
+					{
+						"prompt": "What does W3C stand for?",
+						"answer": "World Wide Web Consortium"
+					},
+					{
+						"prompt": "What does URI stand for?",
+						"answer": "Uniform Resource Locator",
+						"extra": "URI and URL are not technically the same thing, but both are used refer to the address of a web page"
+					},
+				]
+			}
+		]
+	}
+}
