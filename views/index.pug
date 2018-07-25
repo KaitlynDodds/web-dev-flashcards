@@ -4,4 +4,10 @@ block main
 	p This is the main content
 	h5 Welcome, #{username}
 
-	a(href='/users/logout') Logout
+	h4 Topics
+	for topic in topics
+		div
+			a(href=`/topics/${topic.title}`) #{topic.title}
+
+	div
+		a(href='/users/logout') Logout

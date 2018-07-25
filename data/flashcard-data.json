@@ -54,7 +54,7 @@
 						"prompt": "Status Code: 404",
 						"answer": "Not Found",
 						"extra": "server can not find requested resource"
-					},
+					}
 				]
 			},
 			{
@@ -162,7 +162,7 @@
 						"prompt": "What does URI stand for?",
 						"answer": "Uniform Resource Locator",
 						"extra": "URI and URL are not technically the same thing, but both are used refer to the address of a web page"
-					},
+					}
 				]
 			}
 		]
