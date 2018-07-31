@@ -3,6 +3,7 @@ const bodyParser 	= require('body-parser');
 const cookieParser  = require('cookie-parser');
 
 const cardsMiddleware = require('./routes/middleware/cards_middleware');
+const topicsMiddleware = require('./routes/middleware/topics_middleware');
 
 const indexRoutes 	= require('./routes');
 const userRoutes 	= require('./routes/users');
@@ -23,10 +24,7 @@ app.use(cookieParser());
 /* Middleware
 ***************/
 
-app.use('/topics/:topic_title/cards', 
-	cardsMiddleware.checkTopicAndTopicId,	// check topic exists and matches topic id
-	cardsMiddleware.setLocals				// set locals variable topic
-);
+app.use('/topics/:topic_title', topicsMiddleware.checkTopic);
 
 app.use('/topics/:topic_title/cards/:id', 
 	cardsMiddleware.checkCardId,

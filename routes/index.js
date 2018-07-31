@@ -8,8 +8,8 @@ router.get('/', (req, res) => {
 	if (!req.cookies.username) {
 		res.redirect('/users/login');
 	}
-	const { topics } = data;
-	res.render('index', { username: req.cookies.username, topics });
+	
+	res.redirect('/topics');
 });
 
 module.exports = router;
