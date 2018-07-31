@@ -6,8 +6,6 @@ block main
 	div
 		h3 #{card.prompt}
 
-		p #{val}
-
 		if (side === 'question') 
 			a(href=`/topics/${topic.title}/cards/${card_id}?side=answer`) Show Answer
 		else 

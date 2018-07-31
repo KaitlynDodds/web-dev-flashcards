@@ -11,6 +11,9 @@ const { data } = require('../data/flashcard-data.json');
 router.get('/', (req, res) => {
 	const { topics } = data;
 
+	// clear topic_id cookie
+	res.clearCookie('topic_id');
+
 	res.render('index', { username: req.cookies.username, topics })
 });
 
