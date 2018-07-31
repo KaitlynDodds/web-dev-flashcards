@@ -5,10 +5,6 @@ const router = express.Router();
 const { data } = require('../data/flashcard-data.json');
 
 router.get('/', (req, res) => {
-	if (!req.cookies.username) {
-		res.redirect('/users/login');
-	}
-	
 	res.redirect('/topics');
 });
 

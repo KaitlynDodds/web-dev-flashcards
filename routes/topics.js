@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
 	res.render('index', { username: req.cookies.username, topics })
 });
 
+
 router.get('/:topic_title', (req, res) => {
 	const { topic } = res.locals;
 
