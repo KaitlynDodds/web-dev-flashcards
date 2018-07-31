@@ -22,6 +22,7 @@ router.post('/login', (req, res) => {
 router.get('/logout', (req, res) => {
 	// clear cookies
 	res.clearCookie('username');
+	res.clearCookie('topic_id');
 	// redirect back to login
 	res.redirect('/users/login');
 });

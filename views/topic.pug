@@ -2,7 +2,11 @@ extends layout.pug
 
 block main
 	h3 #{topic.title}
+
 	p Questions: #{topic.cards.length}
+
 	a(href=`/topics/${topic.title}/cards`) Begin
+
 	br
+		
 	a(href='/') Back
