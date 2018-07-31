@@ -5,6 +5,7 @@ const cookieParser  = require('cookie-parser');
 const indexRoutes 	= require('./routes');
 const userRoutes 	= require('./routes/users');
 const topicRoutes 	= require('./routes/topics');
+const cardRoutes 	= require('./routes/cards');
 
 const app 			= express();
 
@@ -23,6 +24,7 @@ app.use(cookieParser());
 app.use(indexRoutes);
 app.use('/users', userRoutes);
 app.use('/topics', topicRoutes);
+app.use('/topics/:topic_title/cards', cardRoutes);
 
 
 /* Serve

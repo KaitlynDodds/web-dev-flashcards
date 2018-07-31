@@ -3,6 +3,6 @@ extends layout.pug
 block main
 	h3 #{topic.title}
 	p Questions: #{topic.cards.length}
-	button(href='/') Begin
+	a(href=`/topics/${topic.title}/cards`) Begin
 	br
 	a(href='/') Back

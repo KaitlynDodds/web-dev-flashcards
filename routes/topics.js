@@ -15,6 +15,7 @@ router.get('/:topic_title', (req, res) => {
 	let topic;
 	for (let i = 0; i < topics.length; i++) {
 		if (topics[i].title === topicTitle) {
+			res.cookie('topic_id', i);
 			topic = topics[i];
 			break;
 		}
@@ -24,7 +25,7 @@ router.get('/:topic_title', (req, res) => {
 		throw new Error('Unknown Topic');
 	}
 
-	res.render('topic', { topic });
+	res.render('topic', { topic, id: req.cookies.topic_id });
 });
 
 
