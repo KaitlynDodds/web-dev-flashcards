@@ -164,6 +164,116 @@
 						"extra": "URI and URL are not technically the same thing, but both are used refer to the address of a web page"
 					}
 				]
+			},
+			{
+				"title": "Testing",
+				"cards": [
+					{
+						"prompt": "What is Unit Testing?",
+						"answer": "Tests that are run constantly throughout the development process to ensure that everything is working, every time you make a change."
+					},
+					{
+						"prompt": "What is Integration Testing?",
+						"answer": "Tests that are run when you add new code to pre-existing code, to ensure that not only do all pieces work individually, but also that they run together correctly without breaking."
+					},
+					{
+						"prompt": "What is End-to-End Testing?",
+						"answer": "The application is run 'end to end' for all user stories that you can think of."
+					},
+					{
+						"prompt": "Unit Testing",
+						"answers": [
+							"Easy to write and verify",
+							"Complicated test setup",
+							"Test specific scenarios in your application"
+						],
+						"correct": 0
+					},
+					{
+						"prompt": "Integration Testing",
+						"answers": [
+							"Components are tested in isolation",
+							"All application components are tested at once",
+							"One or more components of the application are tested"
+						],
+						"correct": 2
+					},
+					{
+						"prompt": "Integration Testing",
+						"answers": [
+							"Verifies implementation of database and network components",
+							"Verifies implementation of code",
+							"Verifies implementation of individual components and their interconnected behavior"
+						],
+						"correct": 2
+					},
+					{
+						"prompt": "Failed Integration Test",
+						"answer": "Can mean the code is correct but the environment has changed"
+					},
+					{
+						"prompt": "Failed Unit Test",
+						"answer": "Always a regression, some code is broken"
+					},
+					{
+						"prompt": "An integration test an use real containers, databases, and networks.",
+						"answers": [
+							"True",
+							"False"
+						],
+						"correct": 0
+					},
+					{
+						"prompt": "End to End Testing",
+						"answers": [
+							"Should take no longer than 5 minutes to run all test",
+							"Run only a few times during a products lifecycle, very time consuming",
+							"Can take several hours to run all test"
+						],
+						"correct": 1
+					},
+					{
+						"prompt": "Which of the following is not a type of testing?",
+						"answers": [
+							"Unit",
+							"Integration",
+							"Behavior Driven",
+							"End-to-End"
+						],
+						"correct": 2
+					},
+					{
+						"prompt": "Behavior Driven Development",
+						"answers": [
+							"Write all code first, then go back a write tests",
+							"Write code to fulfill a behavior, then write tests",
+							"Write tests to test a behavior, then write code"
+						],
+						"correct": 2
+					},
+					{
+						"prompt": "The goal of Unit Testing is to find unexpected bugs.",
+						"answers": [
+							"True",
+							"False"
+						],
+						"correct": 1,
+						"extra": "Unit Testing is used to robustly design software components. Only during code refactoring could you expect Unit Testing to find unexpected bugs."
+					},
+					{
+						"prompt": "Changes to another part of your code base could cause Unit tests related to a different feature to fail.",
+						"answers": [
+							"True",
+							"False"
+						],
+						"correct": 1,
+						"extra": "Unit Tests do not contain any knowledge or assumptions about another part of your code base that is not being tested by that test suite."
+					},
+					{
+						"prompt": "A Test Suite is...",
+						"answer": "A block of unit tests that are closely related. They test the same function or similar parts of the code base."
+					}
+				]
 			}
 		]
 	}
