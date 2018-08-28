@@ -25,7 +25,7 @@ router.get('/:card_id/next', (req, res) => {
 	
 	if (nxt_card_id && nxt_card_id >= topic.cards.length) {
 		// TODO: end of card list, redirect to finished topic page
-		res.redirect('/');
+		res.redirect(`/topics/${topic.title}`);
 	}
 
 	res.redirect(`/topics/${topic.title}/cards/${nxt_card_id}?side=question`);
