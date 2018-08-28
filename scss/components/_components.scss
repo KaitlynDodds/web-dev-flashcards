@@ -42,26 +42,6 @@
     }
 }
 
-.topics {
-    @extend %rounded-bottom;
-    @extend %card;
-    @include flex-display();
-}
-
-.topic {
-    @extend %center;
-    @include flex-display($direction: column);
-    background-color: $color-primary;
-    margin: 3px;
-    flex: 1 0 0;
-    min-width: 200px;
-    height: 200px;
-    &.red {
-        @include basic($color-primary-light, $color-secondary);
-    }
-    
-}
-
 .card-footer {
     @extend %rounded-bottom;
     @extend %card;

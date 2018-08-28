@@ -7,16 +7,13 @@
         padding: 15px 0 10px;
     }
     h3 {
-        background-image: url("../images/locker-background.jpeg");
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover;
+        @include img-background("../images/locker-background.jpeg"); 
         margin: 0;
         padding: 20px 28px 15px;
         color: $color-primary-light;
         text-shadow: 0px 0px 5px rgba($color-secondary,0.8);
     }
-}
+} 
 
 .card {
     @extend %card;
@@ -30,14 +27,14 @@
     }
 }
 
-.btn-bar {
+.card-btn-bar {
     text-align: right;
     a {
         color: $color-secondary;
     }
 }
 
-.score {
+.card-score {
     font-size: 1.5em;
     text-align: center;
     margin-top: -55px;

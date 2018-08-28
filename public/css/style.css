@@ -1,4 +1,4 @@
-.topic, .username-form, footer {
+.username-form, .topic, footer {
   text-align: center;
 }
 
@@ -7,12 +7,12 @@
   border-top-right-radius: 30px;
 }
 
-.card-footer, .topics, .username-form button, .username-form {
+.card-footer, .username-form button, .username-form, .topics {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.card-footer, .topics, .username-form, .name-display, .card {
+.card-footer, .username-form, .name-display, .topics, .card {
   background-color: #EEE0D3;
   padding: 25px 25px 15px;
   margin-bottom: 5px;
@@ -468,21 +468,41 @@ footer p {
   margin: 0 auto;
 }
 
-.btn-bar {
+.card-btn-bar {
   text-align: right;
 }
-.btn-bar a {
+.card-btn-bar a {
   color: #B33F4F;
 }
 
-.score {
+.card-score {
   font-size: 1.5em;
   text-align: center;
   margin-top: -55px;
   margin-bottom: -30px;
 }
-.score span:first-child {
+.card-score span:first-child {
   font-size: 6em;
+}
+
+.topics {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.topic {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #DFC9B3;
+  margin: 3px;
+  flex: 1 0 0;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 5px;
 }
 
 .name-display {
@@ -522,29 +542,6 @@ footer p {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.topics {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.topic {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #DFC9B3;
-  margin: 3px;
-  flex: 1 0 0;
-  min-width: 200px;
-  height: 200px;
-}
-.topic.red {
-  color: #EEE0D3;
-  background-color: #B33F4F;
 }
 
 .card-footer {

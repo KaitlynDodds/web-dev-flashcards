@@ -19,3 +19,10 @@
     flex-direction: $direction;
     flex-wrap: $wrap;
 }
+
+@mixin img-background($url) {
+    background-image: url($url);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}

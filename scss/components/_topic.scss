@@ -1,0 +1,16 @@
+.topics {
+    @extend %rounded-bottom;
+    @extend %card;
+    @include flex-display();
+}
+
+.topic {
+    @extend %center;
+    @include flex-display($direction: column);
+    background-color: $color-primary;
+    margin: 3px;
+    flex: 1 0 0;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
