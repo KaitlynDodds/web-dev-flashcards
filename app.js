@@ -17,7 +17,7 @@ const app 			= express();
 /* Setup
 ***************/
 app.set('view engine', 'pug');
-
+app.use('/public', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 

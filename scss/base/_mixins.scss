@@ -1,0 +1,14 @@
+// ============================================
+// MIXINS
+// ============================================
+
+@mixin centered($width) {
+    margin: 0 auto;
+    width: $width
+}
+
+@mixin basic($color, $background-color) {
+    color: $color;
+    background-color: $background-color;
+    @content;
+}

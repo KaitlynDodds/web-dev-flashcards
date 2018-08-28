@@ -1,0 +1,36 @@
+.name-display {
+    @extend %rounded-top;
+    @extend %card;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.username-form {
+    @extend %rounded-bottom;
+    @extend %card;
+    @extend %center;
+    label,
+    button,
+    input {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+    }
+    button {
+        @include centered(90px);
+        @include basic($color-primary-light, $color-secondary);
+        @extend %rounded-bottom;
+        @extend %rounded-top;
+        padding: 8px 0;
+        border: solid 1px $color-secondary;
+    }
+    input {
+        @include centered(50%);
+        @include basic($color-secondary, $color-primary);
+        padding: 10px;
+        border: none;
+        text-align: center;
+    }
+}

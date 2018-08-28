@@ -1,0 +1,29 @@
+// ============================================
+// VARIABLES
+// ============================================
+
+// Descriptive Color Vars
+
+$white                  : #fff;
+$black                  : #000;
+$gray                   : #9c9c9c;
+$apple-blossom          : #B33F4F;
+$bone                   : #DFC9B3;
+$madison-blue           : #0A2463;
+$bone-light             : #EEE0D3;
+
+// Functional Color Vars
+
+$color-primary          : $bone;
+$color-secondary        : $apple-blossom;
+
+$color-text-dark        : #2D2327;
+$color-text-light       : $white;
+
+$color-disabled         : $gray;
+$color-accent           : $madison-blue;
+$color-primary-light    : $bone-light;
+
+// Font Stack
+$font-heading           : 'Cabin Sketch', cursive;
+$font-body              : 'Sorts Mill Goudy', serif;

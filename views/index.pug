@@ -1,8 +1,7 @@
 extends layout.pug
 
 block main
-	p This is the main content
-	h5 Welcome, #{username}
+	include includes/name-display.pug
 
 	h4 Topics
 	for topic in topics

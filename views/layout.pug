@@ -1,10 +1,13 @@
 doctype html
 html
 	head
+		link(href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Sorts+Mill+Goudy",rel="stylesheet")
+		link(href="/public/css/style.css", rel="stylesheet", type='text/css')
 		title Web Development Flashcards
 	body
 		include includes/header.pug
 
-		block main
+		.wrapper
+			block main
 
 		include includes/footer.pug

@@ -1,0 +1,23 @@
+// ============================================
+// EXTENDS
+// ============================================
+
+%center {
+    text-align: center;
+}
+
+%rounded-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+%rounded-bottom {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+%card {
+    background-color: $color-primary-light;
+    padding: 25px 25px 15px;
+    margin-bottom: 5px;
+}

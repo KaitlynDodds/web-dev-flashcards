@@ -1,8 +1,13 @@
 extends layout.pug
 
 block main
+	include includes/name-display.pug
+
 	//- ask the user for their name
-	form(action='/users/login', method='POST')
-		label(for='username') Username:
-		input(type='text',name='username') 
-		button(type='submit') Submit
+	.username-form
+		form(action='/users/login', method='POST')
+			label(for='username') Please Enter Your Name:
+			
+			input(type='text',name='username') 
+			
+			button(type='submit') Submit
