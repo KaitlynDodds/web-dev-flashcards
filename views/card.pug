@@ -3,16 +3,18 @@ extends layout.pug
 block main
 	include includes/name-display.pug
 
-	h3 #{topic.title}
+	.card-title
+		h3 #{topic.title}
 
-	div
-		h3 #{card.prompt}
+	.card 
+
+		.prompt
+			h3 #{card.prompt}
 
 		if (side === 'question') 
 			a(href=`/topics/${topic.title}/cards/${card_id}?side=answer`) Show Answer
 		else 
 			p #{card.answer}
 
-		br
 		a(href=`/topics/${topic.title}/cards/${card_id}/next`) Next
 

@@ -1,0 +1,48 @@
+.card-title {
+    background-color: $color-primary-light;
+    border-bottom: solid 1px rgba($color-accent, 0.3);
+    p {
+        text-align: center;
+        margin: 0;
+        padding: 15px 0 10px;
+    }
+    h3 {
+        background-image: url("../images/locker-background.jpeg");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        margin: 0;
+        padding: 20px 28px 15px;
+        color: $color-primary-light;
+        text-shadow: 0px 0px 5px rgba($color-secondary,0.8);
+    }
+}
+
+.card {
+    @extend %card;
+    p {
+        color: rgba($color-text-dark, 0.8);
+    }
+    .description {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto; 
+    }
+}
+
+.btn-bar {
+    text-align: right;
+    a {
+        color: $color-secondary;
+    }
+}
+
+.score {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: -55px;
+    margin-bottom: -30px;
+    span:first-child {
+        font-size: 6em;
+    }
+}

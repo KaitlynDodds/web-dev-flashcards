@@ -3,12 +3,21 @@ extends layout.pug
 block main
 	include includes/name-display.pug
 
-	h3 #{topic.title}
+	.card-title
+		h3 #{topic.title}
+		p TOPIC
 
-	p Questions: #{topic.cards.length}
+	.card 
+		p.description #{topic.description}
 
-	a(href=`/topics/${topic.title}/cards`) Begin
+		p Score: 
+			.score
+				span 18
+				span /#{topic.cards.length}
 
-	br
-		
-	a(href='/') Back
+		.btn-bar
+			a(href=`/topics/${topic.title}/cards`) 
+				i.fas.fa-arrow-right
+
+	include includes/card-footer.pug
+	

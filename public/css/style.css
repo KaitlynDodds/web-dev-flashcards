@@ -7,12 +7,12 @@
   border-top-right-radius: 30px;
 }
 
-.topics, .username-form button, .username-form {
+.card-footer, .topics, .username-form button, .username-form {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.topics, .username-form, .name-display {
+.card-footer, .topics, .username-form, .name-display, .card {
   background-color: #EEE0D3;
   padding: 25px 25px 15px;
   margin-bottom: 5px;
@@ -437,6 +437,54 @@ footer p {
   width: 40%;
 }
 
+.card-title {
+  background-color: #EEE0D3;
+  border-bottom: solid 1px rgba(10, 36, 99, 0.3);
+}
+.card-title p {
+  text-align: center;
+  margin: 0;
+  padding: 15px 0 10px;
+}
+.card-title h3 {
+  background-image: url("../images/locker-background.jpeg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  margin: 0;
+  padding: 20px 28px 15px;
+  color: #EEE0D3;
+  text-shadow: 0px 0px 5px rgba(179, 63, 79, 0.8);
+}
+
+.card p {
+  color: rgba(45, 35, 39, 0.8);
+}
+.card .description {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn-bar {
+  text-align: right;
+}
+.btn-bar a {
+  color: #B33F4F;
+}
+
+.score {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: -55px;
+  margin-bottom: -30px;
+}
+.score span:first-child {
+  font-size: 6em;
+}
+
 .name-display {
   display: flex;
   flex-direction: row;
@@ -497,6 +545,17 @@ footer p {
 .topic.red {
   color: #EEE0D3;
   background-color: #B33F4F;
+}
+
+.card-footer {
+  text-align: center;
+  background-color: #B33F4F;
+}
+.card-footer p {
+  margin: 0;
+}
+.card-footer i {
+  color: #EEE0D3;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
 		"topics": [
 			{
 				"title": "Http Status Codes",
+				"description": "Test your knowledge of common HTTP Status Codes!",
 				"cards": [
 					{
 						"prompt": "Status Code: 100",
@@ -59,6 +60,7 @@
 			},
 			{
 				"title": "Acronyms",
+				"description": "Acronyms can often be the most confusing part of learning new technologies. Don't get left behind!",
 				"cards": [
 					{
 						"prompt": "What does HTTP stand for?",

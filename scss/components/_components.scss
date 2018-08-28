@@ -59,4 +59,18 @@
     &.red {
         @include basic($color-primary-light, $color-secondary);
     }
+    
+}
+
+.card-footer {
+    @extend %rounded-bottom;
+    @extend %card;
+    text-align: center;
+    background-color: $color-secondary;
+    p {
+        margin: 0;
+    }
+    i {
+        color: $color-text-light
+    }
 }
