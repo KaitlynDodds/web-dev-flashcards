@@ -12,3 +12,10 @@
     background-color: $background-color;
     @content;
 }
+
+@mixin flex-display($justify: center, $direction: row, $wrap: wrap) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}

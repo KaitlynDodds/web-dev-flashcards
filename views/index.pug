@@ -4,7 +4,15 @@ block main
 	include includes/name-display.pug
 
 	.topics
-		for topic in topics
-			div
-				a(href=`/topics/${topic.title}`) #{topic.title}
-
+		//- for topic in topics
+		//- 	.topic
+		//- 		a(href=`/topics/${topic.title}`) #{topic.title}
+		a.topic.red(href=`/topics`)
+			| TOPIC NAME NAME
+		a.topic(href=`/topics`)
+			| TOPIC NAME
+		a.topic(href=`/topics`)
+			| TOPIC NAME NAME NAME
+		a.topic(href=`/topics`)
+			| TOPIC NAME NAME NAME
+		

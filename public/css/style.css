@@ -1,4 +1,4 @@
-.username-form, footer {
+.topic, .username-form, footer {
   text-align: center;
 }
 
@@ -7,12 +7,12 @@
   border-top-right-radius: 30px;
 }
 
-.username-form button, .username-form {
+.topics, .username-form button, .username-form {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.username-form, .name-display {
+.topics, .username-form, .name-display {
   background-color: #EEE0D3;
   padding: 25px 25px 15px;
   margin-bottom: 5px;
@@ -368,6 +368,10 @@ p, label, a {
   font-size: 1.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 4em;
 }
@@ -470,6 +474,29 @@ footer p {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.topics {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.topic {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #DFC9B3;
+  margin: 3px;
+  flex: 1 0 0;
+  min-width: 200px;
+  height: 200px;
+}
+.topic.red {
+  color: #EEE0D3;
+  background-color: #B33F4F;
 }
 
 /*# sourceMappingURL=style.css.map */
