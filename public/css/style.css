@@ -359,6 +359,15 @@ h1, h2, h3 {
   color: #B33F4F;
 }
 
+p, span, label, a, h3, h4, h5, h6 {
+  font-family: "Sorts Mill Goudy", serif;
+  color: #2D2327;
+}
+
+p, label, a {
+  font-size: 1.5em;
+}
+
 h1 {
   font-size: 4em;
 }
@@ -371,12 +380,15 @@ h3 {
   font-size: 3em;
 }
 
-p, span, label, a, h3, h4, h5 {
-  font-family: "Sorts Mill Goudy", serif;
-  color: #2D2327;
+h4 {
+  font-size: 2.5em;
 }
 
-p, label, a {
+h5 {
+  font-size: 2em;
+}
+
+h6 {
   font-size: 1.5em;
 }
 
@@ -404,10 +416,10 @@ h1 span {
 footer {
   background-color: #B33F4F;
   border-top: solid 2px #fff;
-  height: 80px;
+  height: 90px;
   margin-top: 30px;
 }
-footer h4 {
+footer h6 {
   color: #EEE0D3;
   margin: 20px 0 10px;
 }
@@ -421,26 +433,26 @@ footer p {
   width: 40%;
 }
 
+.name-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .name-display p {
   margin: 0;
   padding: 0;
+  display: inline-block;
+}
+.name-display a {
+  color: #B33F4F;
 }
 
-.username-form label,
-.username-form button,
-.username-form input {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 .username-form button {
   margin: 0 auto;
   width: 90px;
   color: #EEE0D3;
   background-color: #B33F4F;
   padding: 8px 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
   border: solid 1px #B33F4F;
 }
 .username-form input {
@@ -448,11 +460,16 @@ footer p {
   width: 50%;
   color: #B33F4F;
   background-color: #DFC9B3;
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding: 10px;
   border: none;
   text-align: center;
+}
+.username-form label,
+.username-form button,
+.username-form input {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

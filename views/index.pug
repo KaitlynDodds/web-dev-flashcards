@@ -3,10 +3,8 @@ extends layout.pug
 block main
 	include includes/name-display.pug
 
-	h4 Topics
-	for topic in topics
-		div
-			a(href=`/topics/${topic.title}`) #{topic.title}
+	.topics
+		for topic in topics
+			div
+				a(href=`/topics/${topic.title}`) #{topic.title}
 
-	div
-		a(href='/users/logout') Logout
