@@ -1,0 +1,9 @@
+.card-title
+    h3 #{topic.title}
+    if side
+        if (side === 'answer')
+            p.flip-colors #{side}
+        else 
+            p #{side}
+    else 
+        p TOPIC

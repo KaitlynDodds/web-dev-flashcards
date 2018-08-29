@@ -1,0 +1,13 @@
+extends layout.pug
+
+block main
+	include includes/name-header.pug
+
+	//- ask the user for their name
+	.username-form
+		form(action='/users/login', method='POST')
+			label(for='username') Please Enter Your Name:
+			
+			input(type='text',name='username')
+			
+			button(type='submit') Submit

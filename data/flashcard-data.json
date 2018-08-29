@@ -3,8 +3,8 @@
 		"title": "Web Development Flashcards",
 		"topics": [
 			{
-				"id": 0,
-				"title": "Http Status Codes",
+				"title": "HTTP Status Codes",
+				"description": "Test your knowledge of common HTTP Status Codes!",
 				"cards": [
 					{
 						"prompt": "Status Code: 100",
@@ -61,6 +61,7 @@
 			{
 				"id": 1,
 				"title": "Acronyms",
+				"description": "Acronyms can often be the most confusing part of learning new technologies. Don't get left behind!",
 				"cards": [
 					{
 						"prompt": "What does HTTP stand for?",

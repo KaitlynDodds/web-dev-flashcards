@@ -14,14 +14,14 @@ router.get('/', (req, res) => {
 	// clear topic_id cookie
 	res.clearCookie('topic_id');
 
-	res.render('index', { username: req.cookies.username, topics })
+	res.render('topics', { username: req.cookies.username, topics })
 });
 
 
 router.get('/:topic_title', (req, res) => {
 	const { topic } = res.locals;
 
-	res.render('topic', { topic });
+	res.render('flashcard', { topic });
 });
 
 
