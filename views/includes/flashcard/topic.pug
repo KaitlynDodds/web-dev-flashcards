@@ -1,0 +1,11 @@
+.card.card-topic
+    p.description #{topic.description}
+
+    .card-score
+        p Score: 
+        span 18
+        span /#{topic.cards.length}
+
+    .card-btn-bar
+        a(href=`/topics/${topic.title}/cards`)
+            | Begin

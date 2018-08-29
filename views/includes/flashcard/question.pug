@@ -1,0 +1,12 @@
+.card.card-question
+    p #{card.prompt}
+    
+    a(href='').show-hint-btn 
+        | Show Hint
+
+    .card-btn-bar
+        a(href=`/topics/${topic.title}/cards/${card_id}?side=answer`).flip
+            i.far.fa-share-square
+
+        a(href=`/topics/${topic.title}/cards/${card_id}/next`).next
+            i.fas.fa-arrow-right

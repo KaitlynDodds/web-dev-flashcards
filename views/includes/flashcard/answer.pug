@@ -1,0 +1,9 @@
+.card.card-answer
+    p #{card.answer}
+
+    .card-btn-bar
+        a(href=`/topics/${topic.title}/cards/${card_id}?side=question`).flip.flip-colors
+            i.far.fa-share-square
+
+        a(href=`/topics/${topic.title}/cards/${card_id}/next`).next
+            i.fas.fa-arrow-right

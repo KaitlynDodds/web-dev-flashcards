@@ -35,3 +35,15 @@
     padding: 10px;
 }
 
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+%flip-colors {
+    background-color: $color-secondary;
+    color: $color-text-light;
+}
