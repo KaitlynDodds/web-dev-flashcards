@@ -543,7 +543,6 @@ footer p {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  box-sizing: border-box;
   background-color: #B33F4F;
   color: #EEE0D3;
   margin: 3px;
@@ -552,10 +551,9 @@ footer p {
   height: 200px;
   border-radius: 5px;
 }
-.topic:nth-of-type(2n-1) {
-  color: #2D2327;
-  background-color: #EEE0D3;
-  border: solid 2px #DFC9B3;
+.topic:nth-of-type(3n-2) {
+  color: #B33F4F;
+  background-color: #DFC9B3;
 }
 
 .name-display {
