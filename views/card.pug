@@ -3,11 +3,9 @@ extends layout.pug
 block main
 	include includes/name-display.pug
 
-	.card-title
-		h3 #{topic.title}
+	include includes/card-title.pug
 
 	.card 
-
 		.prompt
 			h3 #{card.prompt}
 

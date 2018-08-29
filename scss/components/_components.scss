@@ -18,27 +18,17 @@
     @extend %rounded-bottom;
     @extend %card;
     @extend %center;
-    button {
-        @include centered(90px);
-        @include basic($color-primary-light, $color-secondary);
-        @extend %rounded-bottom;
-        @extend %rounded-top;
-        padding: 8px 0;
-        border: solid 1px $color-secondary;
-    }
     input {
         @include centered(50%);
         @include basic($color-secondary, $color-primary);
         padding: 10px;
         border: none;
         text-align: center;
+        margin: 20px 0;
     }
-    label,
-    button,
-    input {
+    label{
         display: block;
-        margin-top: 20px;
-        margin-bottom: 20px; 
+        margin: 20px 0;
     }
 }
 
@@ -47,10 +37,7 @@
     @extend %card;
     text-align: center;
     background-color: $color-secondary;
-    p {
-        margin: 0;
-    }
     i {
-        color: $color-text-light
+        @extend %btn;
     }
 }

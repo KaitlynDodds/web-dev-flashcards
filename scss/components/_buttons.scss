@@ -1,0 +1,20 @@
+.card-btn-bar {
+    text-align: center;
+    a {
+        @extend %btn-text;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    margin: 60px 0 20px;
+}
+
+.username-form {
+    button {
+        @include centered(120px);
+        @extend %btn-text;
+        display: block;
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+    }
+}
