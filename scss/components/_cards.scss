@@ -5,6 +5,7 @@
         text-align: center;
         margin: 0;
         padding: 15px 0 10px;
+        text-transform: uppercase;
     }
     h3 {
         @include img-background("../images/locker-background.jpeg"); 
@@ -20,7 +21,7 @@
     p {
         color: rgba($color-text-dark, 0.8);
     }
-    .description {
+    p:first-child {
         text-align: center;
         width: 90%;
         margin: 0 auto; 
@@ -34,5 +35,15 @@
     margin-bottom: -30px;
     span:first-child {
         font-size: 6em;
+    }
+}
+
+.card-footer {
+    @extend %rounded-bottom;
+    @extend %card;
+    text-align: center;
+    background-color: $color-secondary;
+    i {
+        @extend %btn;
     }
 }

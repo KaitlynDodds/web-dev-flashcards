@@ -6,13 +6,21 @@ block main
 	include includes/card-title.pug
 
 	.card 
-		.prompt
-			h3 #{card.prompt}
+		p #{card.prompt}
 
-		if (side === 'question') 
-			a(href=`/topics/${topic.title}/cards/${card_id}?side=answer`) Show Answer
-		else 
-			p #{card.answer}
+		a(href='').show-hint-btn 
+			| Show Hint
 
-		a(href=`/topics/${topic.title}/cards/${card_id}/next`) Next
+		.card-btn-bar.clearfix
+			if (side === 'question') 
+				a(href=`/topics/${topic.title}/cards/${card_id}?side=answer`).flip
+					i.far.fa-share-square
+			else 
+				a(href=`/topics/${topic.title}/cards/${card_id}?side=question`).flip-rev
+					i.far.fa-share-square
+
+			a(href=`/topics/${topic.title}/cards/${card_id}/next`).next
+				i.fas.fa-arrow-right
+
+	include includes/card-footer.pug
 

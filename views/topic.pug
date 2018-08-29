@@ -3,9 +3,7 @@ extends layout.pug
 block main
 	include includes/name-display.pug
 
-	.card-title
-		h3 #{topic.title}
-		p TOPIC
+	include includes/card-title.pug
 
 	.card 
 		p.description #{topic.description}
@@ -15,7 +13,7 @@ block main
 				span 18
 				span /#{topic.cards.length}
 
-		.card-btn-bar
+		.card-btn-bar.clearfix
 			a(href=`/topics/${topic.title}/cards`)
 				| Begin
 

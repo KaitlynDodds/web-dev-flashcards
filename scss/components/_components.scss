@@ -31,13 +31,3 @@
         margin: 20px 0;
     }
 }
-
-.card-footer {
-    @extend %rounded-bottom;
-    @extend %card;
-    text-align: center;
-    background-color: $color-secondary;
-    i {
-        @extend %btn;
-    }
-}

@@ -7,12 +7,12 @@
   border-top-right-radius: 30px;
 }
 
-.card-footer, .username-form, .topics, .username-form button, .card-btn-bar a {
+.username-form, .topics, .card-footer, .username-form button, .card-btn-bar a {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.card-footer, .username-form, .name-display, .topics, .card {
+.username-form, .name-display, .topics, .card-footer, .card {
   background-color: #EEE0D3;
   padding: 25px 25px 15px;
   margin-bottom: 5px;
@@ -455,6 +455,7 @@ footer p {
   text-align: center;
   margin: 0;
   padding: 15px 0 10px;
+  text-transform: uppercase;
 }
 .card-title h3 {
   background-image: url("../images/locker-background.jpeg");
@@ -472,7 +473,7 @@ footer p {
 .card p {
   color: rgba(45, 35, 39, 0.8);
 }
-.card .description {
+.card p:first-child {
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -488,6 +489,10 @@ footer p {
   font-size: 6em;
 }
 
+.card-footer {
+  text-align: center;
+  background-color: #B33F4F;
+}
 .topics {
   display: flex;
   justify-content: center;
@@ -537,10 +542,6 @@ footer p {
   margin: 20px 0;
 }
 
-.card-footer {
-  text-align: center;
-  background-color: #B33F4F;
-}
 .card-btn-bar {
   text-align: center;
   margin: 60px 0 20px;
@@ -548,6 +549,32 @@ footer p {
 .card-btn-bar a {
   padding-left: 20px;
   padding-right: 20px;
+}
+.card-btn-bar .flip,
+.card-btn-bar .next {
+  color: #B33F4F;
+  border: none;
+  font-size: 1.9em;
+  padding: 15px 18px 10px 23px;
+}
+.card-btn-bar .next {
+  background-color: #EEE0D3;
+  float: right;
+}
+.card-btn-bar .flip {
+  background-color: #fff;
+  float: left;
+}
+.card-btn-bar .flip-rev {
+  float: left;
+  background-color: #B33F4F;
+  color: #EEE0D3;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .username-form button {
