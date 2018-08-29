@@ -171,6 +171,7 @@
 			{
 				"id": 2,
 				"title": "Testing Frameworks",
+				"description": "Test your knowledge of common testing techniques!",
 				"cards": [
 					{
 						"prompt": "What is Unit Testing?",
