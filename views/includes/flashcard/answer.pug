@@ -1,5 +1,11 @@
 .card.card-answer
-    p #{card.answer}
+    //- Filler paragraph tag
+    p
+
+    if (card.type === 'multiple-choice')
+        p #{card.answers[card.correct]}
+    else 
+        p #{card.answer}
 
     .card-btn-bar
         a(href=`/topics/${topic.title}/cards/${card_id}?side=question`).flip.flip-colors

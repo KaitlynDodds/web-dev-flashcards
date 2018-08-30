@@ -1,8 +1,22 @@
 .card.card-question
-    p #{card.prompt}
-    
-    a(href='').show-hint-btn 
-        | Show Hint
+
+    if (card.type === 'multiple-choice')
+        p #{card.prompt}
+
+        ul.pos-answers 
+            li (Select One)
+            each answer in card.answers
+                li #{answer}
+
+    else 
+        //- Filler paragraph tag 
+        p 
+
+        p #{card.prompt}
+
+        if (card.extra)
+            a(href='').show-hint-btn 
+                | Show Hint
 
     .card-btn-bar
         a(href=`/topics/${topic.title}/cards/${card_id}?side=answer`).flip
