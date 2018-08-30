@@ -1,10 +1,9 @@
 .card.card-topic
     p.description #{topic.description}
 
-    .card-score
-        p Score: 
-        span 0
-        span /#{topic.cards.length}
+    p 
+        span #{topic.cards.length} 
+        | Questions
 
     .card-btn-bar
         a(href=`/topics/${topic.title}/cards`)

@@ -485,20 +485,6 @@ footer p {
   border-bottom: none;
 }
 
-.card-score {
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.card-score p {
-  font-size: 1em;
-  text-align: left;
-  margin-bottom: -30px;
-}
-.card-score span:first-of-type {
-  font-size: 6em;
-}
-
 .card {
   display: flex;
   justify-content: space-between;
@@ -524,9 +510,8 @@ footer p {
 .card-topic > p {
   margin-bottom: 25px;
 }
-.card-topic p:nth-of-type(2) {
-  text-align: left;
-  margin: 30px 0;
+.card-topic span {
+  color: #B33F4F;
 }
 
 .pos-answers {
@@ -603,6 +588,7 @@ footer p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 20px 15px 10px;
 }
 .name-display p {
   margin: 0;
