@@ -1,7 +1,7 @@
 
 function isValidUsername(username) {
     if (typeof username !== 'string') {
-        throw new TypeError();
+        throw new TypeError(`Invalid Username: '${username}'`);
     }
 
     if (username.length < 5 || username.length > 25) {
@@ -13,7 +13,7 @@ function isValidUsername(username) {
 
 function newUser(username) {
     if (!isValidUsername(username)) {
-        throw TypeError();
+        throw TypeError(`Invalid Username: ${username}`);
     }
 
     return {

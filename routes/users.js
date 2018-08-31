@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const userMethods = require('../app_logic/user_methods');
 
 
 /* Routes
@@ -10,13 +11,21 @@ router.get('/login', (req, res) => {
 });
 
 router.post('/login', (req, res) => {
-	if (req.body.username.trim()) {
-		// set cookie 
-		res.cookie('username', req.body.username);
-		// redirect to welcome page 
-		res.redirect('/');
+	const username = req.body.username.trim();
+	let user;
+	
+	try {
+		user = userMethods.newUser(username);
+	} catch (err) {
+		throw err;
 	}
-	throw new Error('Invalid Username');
+	
+	// set cookie 
+	res.cookie('user', user);
+	
+	// redirect to welcome page 
+	res.redirect('/');
+
 });
 
 router.get('/logout', (req, res) => {

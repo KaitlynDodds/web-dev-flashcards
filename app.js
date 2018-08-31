@@ -31,14 +31,14 @@ app.use('/users', userRoutes);
 /* Middleware
 ***************/
 
-app.use(userMiddleware.authenticate);
+// app.use(userMiddleware.authenticate);
 
-app.use('/topics/:topic_title', topicsMiddleware.checkTopic);
+// app.use('/topics/:topic_title', topicsMiddleware.checkTopic);
 
-app.use('/topics/:topic_title/cards/:id', 
-	cardsMiddleware.checkCardId,
-	cardsMiddleware.checkQueryString
-);
+// app.use('/topics/:topic_title/cards/:id', 
+// 	cardsMiddleware.checkCardId,
+// 	cardsMiddleware.checkQueryString
+// );
 
 
 /* Routes
@@ -57,6 +57,13 @@ app.use((req, res, next) => {
 	const err = new Error('Not Found');
 	err.status = 404;
 	next(err);
+});
+
+// catch all errors thrown by app routes
+app.use((err, req, res, next) => {
+	err.status = 500;
+	console.log(err.message);
+	res.render('error', { error: err });
 });
 
 // catch all errors thrown
