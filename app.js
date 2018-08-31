@@ -2,9 +2,9 @@ const express 		= require('express');
 const bodyParser 	= require('body-parser');
 const cookieParser  = require('cookie-parser');
 
-const cardsMiddleware = require('./routes/middleware/cards_middleware');
-const topicsMiddleware = require('./routes/middleware/topics_middleware');
-const userMiddleware = require('./routes/middleware/user_middleware');
+const cardsMiddleware 	= require('./routes/middleware/cards_middleware');
+const topicsMiddleware 	= require('./routes/middleware/topics_middleware');
+const userMiddleware 	= require('./routes/middleware/user_middleware');
 
 const indexRoutes 	= require('./routes');
 const userRoutes 	= require('./routes/users');
@@ -62,7 +62,6 @@ app.use((req, res, next) => {
 // catch all errors thrown by app routes
 app.use((err, req, res, next) => {
 	err.status = 500;
-	console.log(err.message);
 	res.render('error', { error: err });
 });
 
