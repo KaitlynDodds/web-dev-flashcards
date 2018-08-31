@@ -31,14 +31,17 @@ app.use('/users', userRoutes);
 /* Middleware
 ***************/
 
-// app.use(userMiddleware.authenticate);
+// authenticate before all routes 
+app.use(userMiddleware.authenticate);
 
-// app.use('/topics/:topic_title', topicsMiddleware.checkTopic);
+// ensure topic_title is valid 
+app.use('/topics/:topic_title', topicsMiddleware.checkTopic);
 
-// app.use('/topics/:topic_title/cards/:id', 
-// 	cardsMiddleware.checkCardId,
-// 	cardsMiddleware.checkQueryString
-// );
+// ensure card id and provided query string are valid
+app.use('/topics/:topic_title/cards/:id', 
+	cardsMiddleware.checkCardId,
+	cardsMiddleware.checkQueryString
+);
 
 
 /* Routes
@@ -49,8 +52,8 @@ app.use('/topics', topicRoutes);
 app.use('/topics/:topic_title/cards', cardRoutes);
 
 
-/* Middleware
-***************/
+/* Error Handling Middleware
+*****************************/
 
 // catch 404s
 app.use((req, res, next) => {
@@ -65,12 +68,6 @@ app.use((err, req, res, next) => {
 	res.render('error', { error: err });
 });
 
-// catch all errors thrown
-// app.use((err, req, res, next) => {
-// 	res.locals.error = err;
-// 	res.status(err.status);
-// 	next();
-// });
 
 /* Serve
 ***************/

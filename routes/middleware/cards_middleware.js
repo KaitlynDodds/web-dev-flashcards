@@ -7,8 +7,8 @@ const cards_middleware = {};
 // check that provides card id is int, and valid
 cards_middleware.checkCardId = function(req, res, next) {
 	const { topic } = res.locals;
-
 	let id = parseInt(req.params.id);
+	
 	if ( (id === undefined || id === NaN) || topic.cards[id] === undefined ) {
 		const err = new Error('Invalid Card Id');
 		err.status = 500;

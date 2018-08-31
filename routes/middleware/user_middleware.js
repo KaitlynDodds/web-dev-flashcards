@@ -5,6 +5,8 @@ user_middleware.authenticate = function(req, res, next) {
 		res.redirect('/users/login');
 	}
 
+	res.locals.user = req.cookies.user;
+
 	next();
 }
 

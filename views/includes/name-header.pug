@@ -1,11 +1,11 @@
 .name-display
     p Welcome, 
-        if username
-            | #{username}
+        if user
+            | #{user.username}
         else
             | student!
     
-    if (username)
+    if user
         a(href='/users/logout')
             i.fas.fa-sign-out-alt
     else 
