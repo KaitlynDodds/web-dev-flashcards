@@ -1,0 +1,103 @@
+.card-title {
+    background-color: $color-primary-light;
+    p {
+        text-align: center;
+        margin: 0;
+        padding: 15px 0 10px;
+        text-transform: uppercase;
+        border-bottom: solid 1px rgba($color-accent, 0.3);
+    }
+    h3 {
+        @include img-background("../images/locker-background.jpeg"); 
+        margin: 0;
+        padding: 20px 28px 15px;
+        color: $color-text-light;
+        text-shadow: 0px 0px 5px rgba($color-accent,0.8);
+    }
+    .flip-colors {
+        @extend %flip-colors;
+        border-top: solid 2px $color-primary-light;
+        border-bottom: none;
+    }
+} 
+
+.card {
+    @extend %card;
+    @include flex-display(space-between, column);
+    min-height: 300px;
+    p {
+        @include centered(90%);
+        font-size: 2em;
+        color: rgba($color-text-dark, 0.8);
+        text-align: center;
+    }
+
+}
+
+.card-answer {
+    @extend %flip-colors;
+    p {
+        color: $color-text-light;
+    }
+}
+
+.card-topic {
+    padding-bottom: 15px;
+    & > p {
+        margin-bottom: 25px;
+    }
+    span {
+        color: $color-secondary;
+    }
+}
+
+.pos-answers {
+    list-style: none;
+    font-size: 1.4em;
+    margin: 20px 0;
+    padding: 0;
+    color: $color-text-light;
+    li {
+        margin: 0;
+        padding: 20px 30px;
+        background-color: $color-secondary;
+    }
+    li:nth-of-type(2n+1) {
+        background-color: $color-primary-light;
+        color: $color-text-dark;
+        &::before {
+            background-color: $color-secondary;
+        }
+    }
+    li::before {
+        content: "";
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-color: $color-primary-light;
+        border-radius: 100%;
+        margin: 0px 30px -3px 0;
+    }
+    li:first-of-type {
+        color: rgba($color-text-dark, 0.6);
+        font-size: .7em;
+        padding: 0 0 10px;
+        background-color: $color-primary-light;
+        font-style: italic;
+        text-align: center;
+    }
+    li:first-of-type::before {
+        content: none;
+    }
+}
+
+.card-footer {
+    @extend %rounded-bottom;
+    @extend %card;
+    text-align: center;
+    background-color: $color-secondary;
+    padding-bottom: 15px;
+    i {
+        @extend %btn;
+    }
+}

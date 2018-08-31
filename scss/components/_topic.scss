@@ -1,0 +1,21 @@
+.topics {
+    @extend %rounded-bottom;
+    @extend %card;
+    @include flex-display();
+}
+
+.topic {
+    @extend %center;
+    @include flex-display($direction: column);
+    background-color: $color-secondary;
+    color: $color-text-light;
+    margin: 3px;
+    flex: 1 0 0;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    &:nth-of-type(3n-2) {
+        color: $color-secondary;
+        background-color: $color-primary;
+    }
+}

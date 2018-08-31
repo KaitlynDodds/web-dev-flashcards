@@ -1,0 +1,19 @@
+// ============================================
+// FOOTER STYLES
+// ============================================
+
+footer {
+    @extend %center;
+    background-color: $color-secondary;
+    border-top: solid 2px $white;
+    height: 90px;
+    margin-top: 30px;
+    h6 {
+        color: $color-primary-light;
+        margin: 20px 0 10px;
+    }
+    p {
+        margin: 0;
+        font-size: .8em;
+    }
+}

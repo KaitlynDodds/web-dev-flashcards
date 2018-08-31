@@ -1,0 +1,9 @@
+extends layout.pug
+
+block main
+	include includes/name-header.pug
+
+	.topics
+		for topic in topics
+			a.topic.red(href=`/topics/${topic.title}`)
+				| #{topic.title}

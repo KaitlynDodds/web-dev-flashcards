@@ -3,54 +3,65 @@
 		"title": "Web Development Flashcards",
 		"topics": [
 			{
-				"title": "Http Status Codes",
+				"title": "HTTP Status Codes",
+				"description": "Test your knowledge of common HTTP Status Codes!",
 				"cards": [
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 100",
 						"answer": "Continue",
 						"extra": "Interim response indicates that everything is okay so far"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 102",
 						"answer": "Processing",
 						"extra": "The server has received and is processing the request, but no response is available yet"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 200",
 						"answer": "Okay",
 						"extra": "request has succeeded"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 301",
 						"answer": "Moved Permanently",
 						"extra": "the URI of the requested resource has been changed"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 302",
 						"answer": "Found",
 						"extra": "the URI of requested resource has been changed temporarily"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 304",
 						"answer": "Not Modified",
 						"extra": "the response has not been modified, so the client can continue to use the same cached version of the response"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 400",
 						"answer": "Bad Request",
 						"extra": "server could not understand the request due to invalid syntax"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 401",
 						"answer": "Unauthorized",
 						"extra": "the client must authenticate itself to get the requested response"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 403",
 						"answer": "Forbidden",
 						"extra": "client does not have access rights to the content (client's identity is known to the server)"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "Status Code: 404",
 						"answer": "Not Found",
 						"extra": "server can not find requested resource"
@@ -58,110 +69,263 @@
 				]
 			},
 			{
+				"id": 1,
 				"title": "Acronyms",
+				"description": "Acronyms can often be the most confusing part of learning new technologies. Don't get left behind!",
 				"cards": [
 					{
+						"type": "question-answer",
 						"prompt": "What does HTTP stand for?",
 						"answer": "Hypertext Transfer Protocol"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does S at the end of HTTPS stand for?",
 						"answer": "Secure"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does HTML stand for?",
 						"answer": "Hypertext Markup Language"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does CSS stand for?",
 						"answer": "Cascading Style Sheets"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does SSL stand for?",
 						"answer": "Secure Sockets Layer"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does TLS stand for?",
 						"answer": "Transport Layer Security"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does CMS stand for?",
 						"answer": "Content Management System"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does SEO stand for?",
 						"answer": "Search Engine Optimization"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does UX stand for?",
 						"answer": "User Experience"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does PNG stand for?",
 						"answer": "Portable Network Graphics"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does AJAX stand for?",
 						"answer": "Asynchronous JavaScript and XML"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does ASCII stand for?",
 						"answer": "American Standard Code for Information Interchange"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does CSV stand for?",
 						"answer": "Comma Separated Values"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does DOM stand for?",
 						"answer": "Document Object Model"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does DTD stand for?",
 						"answer": "Document Type Definition",
 						"extra": "a line or two of code at the top of a markup language document, like HTML or XML, which defines the language and standard that the document is adhering to"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does FTP stand for?",
 						"answer": "File Transfer Protocol"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does JSON stand for?",
 						"answer": "JavaScript Object Notation"
 					},
-					{
+					{	"type": "question-answer",
 						"prompt": "What does NaN stand for?",
 						"answer": "Not a Number"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does OOP stand for?",
 						"answer": "Object Oriented Programming"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does SQL stand for?",
 						"answer": "Structured Query Language"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does SVG stand for?",
 						"answer": "Scalable Vector Graphics"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does TLD stand for?",
 						"answer": "Top Level Domain",
 						"extra": "domain name extension such as .com, .net, or .org"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does UI stand for?",
 						"answer": "User Interface"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does W3C stand for?",
 						"answer": "World Wide Web Consortium"
 					},
 					{
+						"type": "question-answer",
 						"prompt": "What does URI stand for?",
 						"answer": "Uniform Resource Locator",
 						"extra": "URI and URL are not technically the same thing, but both are used refer to the address of a web page"
+					}
+				]
+			},
+			{
+				"id": 2,
+				"title": "Testing Frameworks",
+				"description": "Test your knowledge of common testing techniques!",
+				"cards": [
+					{
+						"type": "question-answer",
+						"prompt": "What is Unit Testing?",
+						"answer": "Tests that are run constantly throughout the development process to ensure that everything is working, every time you make a change."
+					},
+					{
+						"type": "question-answer",
+						"prompt": "What is Integration Testing?",
+						"answer": "Tests that are run when you add new code to pre-existing code, to ensure that not only do all pieces work individually, but also that they run together correctly without breaking."
+					},
+					{
+						"type": "question-answer",
+						"prompt": "What is End-to-End Testing?",
+						"answer": "The application is run 'end to end' for all user stories that you can think of."
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "Unit Testing",
+						"answers": [
+							"Easy to write and verify",
+							"Complicated test setup",
+							"Test specific scenarios in your application"
+						],
+						"correct": 0
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "Integration Testing",
+						"answers": [
+							"Components are tested in isolation",
+							"All application components are tested at once",
+							"One or more components of the application are tested"
+						],
+						"correct": 2
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "Integration Testing",
+						"answers": [
+							"Verifies implementation of database and network components",
+							"Verifies implementation of code",
+							"Verifies implementation of individual components and their interconnected behavior"
+						],
+						"correct": 2
+					},
+					{
+						"type": "question-answer",
+						"prompt": "Failed Integration Test",
+						"answer": "Can mean the code is correct but the environment has changed"
+					},
+					{
+						"type": "question-answer",
+						"prompt": "Failed Unit Test",
+						"answer": "Always a regression, some code is broken"
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "An integration test an use real containers, databases, and networks.",
+						"answers": [
+							"True",
+							"False"
+						],
+						"correct": 0
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "End to End Testing",
+						"answers": [
+							"Should take no longer than 5 minutes to run all test",
+							"Run only a few times during a products lifecycle, very time consuming",
+							"Can take several hours to run all test"
+						],
+						"correct": 1
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "Which of the following is not a type of testing?",
+						"answers": [
+							"Unit",
+							"Integration",
+							"Behavior Driven",
+							"End-to-End"
+						],
+						"correct": 2
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "Behavior Driven Development",
+						"answers": [
+							"Write all code first, then go back a write tests",
+							"Write code to fulfill a behavior, then write tests",
+							"Write tests to test a behavior, then write code"
+						],
+						"correct": 2
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "The goal of Unit Testing is to find unexpected bugs.",
+						"answers": [
+							"True",
+							"False"
+						],
+						"correct": 1,
+						"extra": "Unit Testing is used to robustly design software components. Only during code refactoring could you expect Unit Testing to find unexpected bugs."
+					},
+					{
+						"type": "multiple-choice",
+						"prompt": "Changes to another part of your code base could cause Unit tests related to a different feature to fail.",
+						"answers": [
+							"True",
+							"False"
+						],
+						"correct": 1,
+						"extra": "Unit Tests do not contain any knowledge or assumptions about another part of your code base that is not being tested by that test suite."
+					},
+					{
+						"type": "question-answer",
+						"prompt": "A Test Suite is...",
+						"answer": "A block of unit tests that are closely related. They test the same function or similar parts of the code base."
 					}
 				]
 			}

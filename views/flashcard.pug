@@ -1,0 +1,17 @@
+extends layout.pug
+
+block main
+	include includes/name-header.pug
+
+	include includes/flashcard/header.pug
+
+	if side 
+		if (side === 'question')
+			include includes/flashcard/question.pug
+		else 
+			include includes/flashcard/answer.pug
+	else 
+		include includes/flashcard/topic.pug
+
+	include includes/flashcard/footer.pug
+

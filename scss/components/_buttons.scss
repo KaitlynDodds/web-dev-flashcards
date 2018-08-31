@@ -1,0 +1,49 @@
+.card-btn-bar {
+    @extend %clearfix;
+    text-align: center;
+    padding: 0 0 20px;
+    margin: 0 25px;
+    a {
+        @extend %btn-text;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .flip,
+    .next {
+        color: $color-secondary;
+        border: none;
+        font-size: 1.9em;
+        padding: 15px 18px 10px 23px;
+    }
+    .next {
+        background-color: $color-primary-light;
+        float: right;
+    }
+    .flip {
+        background-color: $white;
+        float: left;
+    }
+    .flip-colors {
+        @extend %flip-colors;
+    }
+}
+
+
+button[type="submit"] {
+    @include centered(120px);
+    @extend %btn-text;
+    display: block;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+
+.show-hint-btn {
+    @include centered(120px);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 15px 10px;
+    color: $color-secondary;
+    border: solid 1px $color-secondary;
+}

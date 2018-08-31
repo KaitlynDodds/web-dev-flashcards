@@ -39,7 +39,7 @@ router.get('/:card_id', (req, res) => {
 
 	const card = topic.cards[card_id];	
 	
-	res.render('card', { 
+	res.render('flashcard', { 
 		topic, 
 		card, 
 		side, 

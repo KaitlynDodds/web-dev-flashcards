@@ -1,0 +1,28 @@
+// ============================================
+// MIXINS
+// ============================================
+
+@mixin centered($width) {
+    margin: 0 auto;
+    width: $width
+}
+
+@mixin basic($color, $background-color) {
+    color: $color;
+    background-color: $background-color;
+    @content;
+}
+
+@mixin flex-display($justify: center, $direction: row, $wrap: wrap) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin img-background($url) {
+    background-image: url($url);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
