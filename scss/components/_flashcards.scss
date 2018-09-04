@@ -31,7 +31,12 @@
         color: rgba($color-text-dark, 0.8);
         text-align: center;
     }
-
+    &-question {
+        padding-bottom: 0;
+    }
+    &-answer {
+        padding-bottom: 0;ç
+    }
 }
 
 .card-answer {

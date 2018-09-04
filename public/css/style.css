@@ -14,7 +14,7 @@
 
 .username-form, .name-display, .topics, .card-footer, .card {
   background-color: #EEE0D3;
-  padding: 25px 0 0px;
+  padding: 25px 0 15px;
   margin-bottom: 5px;
 }
 
@@ -498,6 +498,12 @@ footer p {
   font-size: 2em;
   color: rgba(45, 35, 39, 0.8);
   text-align: center;
+}
+.card-question {
+  padding-bottom: 0;
+}
+.card-answer {
+  padding-bottom: 0;
 }
 
 .card-answer p {

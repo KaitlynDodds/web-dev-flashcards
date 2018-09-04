@@ -33,7 +33,8 @@ router.get('/:card_id/next', (req, res) => {
 
 
 router.get('/:card_id', (req, res) => {
-
+	const { topic } = res.locals;
+	const { card_id } = res.locals;
 	const card = topic.cards[card_id];	
 	
 	res.render('flashcard', { 
